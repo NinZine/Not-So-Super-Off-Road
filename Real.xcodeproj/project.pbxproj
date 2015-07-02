@@ -1,0 +1,303 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1001CA2A0DB5135800976899 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1001CA290DB5135800976899 /* OpenGL.framework */; };
+		1039229D0DB533A1006600B5 /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = 1039229C0DB533A1006600B5 /* MainMenu.nib */; };
+		10935D9B0DB50D6A000859A9 /* libIrrlicht.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 10935D9A0DB50D6A000859A9 /* libIrrlicht.a */; };
+		10AC24D40DB5EF2C00BAC27E /* Game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 10AC24D20DB5EF2C00BAC27E /* Game.cpp */; };
+		10AC24D50DB5EF2C00BAC27E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 10AC24D30DB5EF2C00BAC27E /* main.cpp */; };
+		10AC25BE0DB60CA800BAC27E /* EventReciever.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 10AC25BD0DB60CA800BAC27E /* EventReciever.cpp */; };
+		10AC2A240DB67F2600BAC27E /* GameObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 10AC2A230DB67F2600BAC27E /* GameObject.cpp */; };
+		10CB87000DB6D96B0051F669 /* libfmodex.dylib in Resources */ = {isa = PBXBuildFile; fileRef = 10CB86FF0DB6D96B0051F669 /* libfmodex.dylib */; };
+		10CB87120DB6DC4B0051F669 /* libfmodex.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 10CB86FF0DB6D96B0051F669 /* libfmodex.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1001CA290DB5135800976899 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = SDKs/MacOSX10.5.sdk/System/Library/Frameworks/OpenGL.framework; sourceTree = SYSTEM_DEVELOPER_DIR; };
+		1039229C0DB533A1006600B5 /* MainMenu.nib */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; path = MainMenu.nib; sourceTree = "<group>"; };
+		10935D920DB50D41000859A9 /* Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Test.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		10935D950DB50D41000859A9 /* Test-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Test-Info.plist"; sourceTree = "<group>"; };
+		10935D9A0DB50D6A000859A9 /* libIrrlicht.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libIrrlicht.a; path = ../../irrlicht/source/Irrlicht/MacOSX/build/Release/libIrrlicht.a; sourceTree = SOURCE_ROOT; };
+		10AC24D00DB5EF2C00BAC27E /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Game.h; sourceTree = "<group>"; };
+		10AC24D20DB5EF2C00BAC27E /* Game.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Game.cpp; sourceTree = "<group>"; };
+		10AC24D30DB5EF2C00BAC27E /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		10AC25210DB5F53900BAC27E /* GameObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameObject.h; sourceTree = "<group>"; };
+		10AC256D0DB6031A00BAC27E /* Camera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Camera.h; sourceTree = "<group>"; };
+		10AC25AF0DB607B800BAC27E /* EventReciever.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventReciever.h; sourceTree = "<group>"; };
+		10AC25BD0DB60CA800BAC27E /* EventReciever.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = EventReciever.cpp; sourceTree = "<group>"; };
+		10AC2A230DB67F2600BAC27E /* GameObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameObject.cpp; sourceTree = "<group>"; };
+		10CB86160DB6B4AB0051F669 /* GameState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameState.h; sourceTree = "<group>"; };
+		10CB86FF0DB6D96B0051F669 /* libfmodex.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; name = libfmodex.dylib; path = /Library/FMOD/api/lib/libfmodex.dylib; sourceTree = "<absolute>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		10935D900DB50D41000859A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10CB87120DB6DC4B0051F669 /* libfmodex.dylib in Frameworks */,
+				10935D9B0DB50D6A000859A9 /* libIrrlicht.a in Frameworks */,
+				1001CA2A0DB5135800976899 /* OpenGL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		10935D820DB50D09000859A9 = {
+			isa = PBXGroup;
+			children = (
+				10CB86FF0DB6D96B0051F669 /* libfmodex.dylib */,
+				10AC24CF0DB5EF2C00BAC27E /* include */,
+				10AC24D10DB5EF2C00BAC27E /* src */,
+				1039229C0DB533A1006600B5 /* MainMenu.nib */,
+				1001CA290DB5135800976899 /* OpenGL.framework */,
+				10935D9A0DB50D6A000859A9 /* libIrrlicht.a */,
+				10935D930DB50D41000859A9 /* Products */,
+				10935D950DB50D41000859A9 /* Test-Info.plist */,
+			);
+			sourceTree = "<group>";
+		};
+		10935D930DB50D41000859A9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				10935D920DB50D41000859A9 /* Test.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		10AC24CF0DB5EF2C00BAC27E /* include */ = {
+			isa = PBXGroup;
+			children = (
+				10AC24D00DB5EF2C00BAC27E /* Game.h */,
+				10AC25210DB5F53900BAC27E /* GameObject.h */,
+				10AC256D0DB6031A00BAC27E /* Camera.h */,
+				10AC25AF0DB607B800BAC27E /* EventReciever.h */,
+				10CB86160DB6B4AB0051F669 /* GameState.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		10AC24D10DB5EF2C00BAC27E /* src */ = {
+			isa = PBXGroup;
+			children = (
+				10AC24D20DB5EF2C00BAC27E /* Game.cpp */,
+				10AC24D30DB5EF2C00BAC27E /* main.cpp */,
+				10AC25BD0DB60CA800BAC27E /* EventReciever.cpp */,
+				10AC2A230DB67F2600BAC27E /* GameObject.cpp */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		10935D910DB50D41000859A9 /* Real */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 10935D980DB50D42000859A9 /* Build configuration list for PBXNativeTarget "Real" */;
+			buildPhases = (
+				10935D8E0DB50D41000859A9 /* Resources */,
+				10935D8F0DB50D41000859A9 /* Sources */,
+				10935D900DB50D41000859A9 /* Frameworks */,
+				10EEFE5D0DBA1E6500E6BA6C /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Real;
+			productName = Test;
+			productReference = 10935D920DB50D41000859A9 /* Test.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		10935D840DB50D09000859A9 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 10935D870DB50D09000859A9 /* Build configuration list for PBXProject "Real" */;
+			compatibilityVersion = "Xcode 2.4";
+			hasScannedForEncodings = 0;
+			mainGroup = 10935D820DB50D09000859A9;
+			productRefGroup = 10935D930DB50D41000859A9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				10935D910DB50D41000859A9 /* Real */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		10935D8E0DB50D41000859A9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10CB87000DB6D96B0051F669 /* libfmodex.dylib in Resources */,
+				1039229D0DB533A1006600B5 /* MainMenu.nib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		10EEFE5D0DBA1E6500E6BA6C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "install_name_tool -change ./libfmodex.dylib @executable_path/../Resources/libfmodex.dylib $TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/MacOS/$PRODUCT_NAME";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		10935D8F0DB50D41000859A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10AC24D40DB5EF2C00BAC27E /* Game.cpp in Sources */,
+				10AC24D50DB5EF2C00BAC27E /* main.cpp in Sources */,
+				10AC25BE0DB60CA800BAC27E /* EventReciever.cpp in Sources */,
+				10AC2A240DB67F2600BAC27E /* GameObject.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		10935D850DB50D09000859A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				COPY_PHASE_STRIP = NO;
+				HEADER_SEARCH_PATHS = (
+					/Library/FMOD/api/inc,
+					/Users/qbi/Code/irrlicht/include,
+				);
+			};
+			name = Debug;
+		};
+		10935D860DB50D09000859A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				COPY_PHASE_STRIP = YES;
+				HEADER_SEARCH_PATHS = (
+					/Library/FMOD/api/inc,
+					/Users/qbi/Code/irrlicht/include,
+				);
+			};
+			name = Release;
+		};
+		10935D960DB50D42000859A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(DEVELOPER_DIR)/SDKs/MacOSX10.5.sdk/System/Library/Frameworks\"";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INFOPLIST_FILE = "Test-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_2)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_3)",
+				);
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../irrlicht/source/Irrlicht/MacOSX/build/Release\"";
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_2 = "\"$(LOCAL_LIBRARY_DIR)/FMOD/api/lib\"";
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_3 = "\"$(SRCROOT)/../../irrlicht/source/Irrlicht/MacOSX/build/Release\"";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+					"-headerpad_max_install_names",
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = Test;
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		10935D970DB50D42000859A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(DEVELOPER_DIR)/SDKs/MacOSX10.5.sdk/System/Library/Frameworks\"";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				INFOPLIST_FILE = "Test-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_2)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_3)",
+				);
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../irrlicht/source/Irrlicht/MacOSX/build/Release\"";
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_2 = "\"$(LOCAL_LIBRARY_DIR)/FMOD/api/lib\"";
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_3 = "\"$(SRCROOT)/../../irrlicht/source/Irrlicht/MacOSX/build/Release\"";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+					"-headerpad_max_install_names",
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = Test;
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		10935D870DB50D09000859A9 /* Build configuration list for PBXProject "Real" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				10935D850DB50D09000859A9 /* Debug */,
+				10935D860DB50D09000859A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		10935D980DB50D42000859A9 /* Build configuration list for PBXNativeTarget "Real" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				10935D960DB50D42000859A9 /* Debug */,
+				10935D970DB50D42000859A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 10935D840DB50D09000859A9 /* Project object */;
+}
